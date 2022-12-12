@@ -1,0 +1,10 @@
+101	c++
+102	programming
+103	database
+104	softwareengg
+105	subtleart
+106	dsa
+107	algorithms
+108	java
+109	python
+110	javascript
