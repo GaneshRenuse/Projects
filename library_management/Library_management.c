@@ -14,7 +14,7 @@ void bookdetails(struct books[]);
 int main()  
 {
     FILE *fptr;
-    fptr = fopen("C:\\program1\\program.txt","w");
+    fptr = fopen("program.txt","w");
 
     if(fptr == NULL)
    {
