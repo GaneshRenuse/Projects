@@ -6,7 +6,7 @@ float currentsavings()
 {
     int crrnt;
     FILE *fptr;
-    fptr = fopen("C:\\program1\\crrntsave.txt", "r");
+    fptr = fopen("crrntsave.txt", "r");
 
     if (fptr == NULL)
     {
@@ -23,7 +23,7 @@ float currentsavings()
 void addmoney(int crrnt)
 {
     FILE *fptr;
-    fptr = fopen("C:\\program1\\crrntsave.txt", "w");
+    fptr = fopen("crrntsave.txt", "w");
 
     if (fptr == NULL)
     {
@@ -45,7 +45,7 @@ void wrt_expences(int crrnt)
     int n, amount;
     char str[10];
     FILE *fp;
-    fp = fopen("C:\\program1\\expenses.txt", "a");
+    fp = fopen("expenses.txt", "a");
 
     if (fp == NULL)
     {
@@ -77,7 +77,7 @@ void show_expenses()
     char str[10];
 
     FILE *fp2;
-    fp2 = fopen("C:\\program1\\expenses.txt", "r");
+    fp2 = fopen("expenses.txt", "r");
 
     if (fp2 == NULL)
     {
@@ -103,7 +103,7 @@ void deduct_money(int x)
     dec_amt = currentsavings();
     dec_amt = dec_amt - x;
     
-    fp3 = fopen("C:\\program1\\crrntsave.txt", "w");
+    fp3 = fopen("crrntsave.txt", "w");
     fprintf(fp3, "%d", dec_amt);
 
     fclose(fp3);
